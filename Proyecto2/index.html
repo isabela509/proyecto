@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedidosYa Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍕 Pizzería Online</h1>
+        <p>¡¡Arma tu pizza y haz tu pedido!!</p>
+    </header>
+
+    <main>
+        <section class="pedido">
+            <h2>Selecciona tu pizza</h2>
+            
+            <!-- Tamaño -->
+            <label for="tamano">Tamaño:</label>
+            <select id="tamano">
+                <option value="30">Pequeña - 30bs</option>
+                <option value="50">Mediana - 60bs</option>
+                <option value="70">Grande - 80bs</option>
+            </select>
+
+            <!-- Ingredientes -->
+            <h3>Ingredientes (+5bs cada uno):</h3>
+            <label><input type="checkbox" value="5"> Extra queso</label><br>
+            <label><input type="checkbox" value="5"> Pepperoni</label><br>
+            <label><input type="checkbox" value="5"> Champiñones</label><br>
+            <label><input type="checkbox" value="5"> Jamón</label><br>
+            
+            <button onclick="calcularPedido()">Calcular total</button>
+
+            <h2 id="total">Total: 0bs</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Pizzería Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
